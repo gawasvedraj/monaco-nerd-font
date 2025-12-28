@@ -45,6 +45,7 @@ jobs:
         run: |
           mkdir -p output
           ./font-patcher -c -q --careful -out output fonts/Monaco.ttf
+          ./font-patcher -c -q -s --careful -out output fonts/Monaco.ttf
 
       - name: Package Result
         run: |
