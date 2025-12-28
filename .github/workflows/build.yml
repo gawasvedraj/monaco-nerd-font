@@ -41,7 +41,7 @@ jobs:
           chmod +x font-patcher
           echo "Font-Patcher ready"
 
-      - name: Path Monaco
+      - name: Patch Monaco
         run: |
           mkdir -p output
           ./font-patcher -c -q --careful -out output fonts/Monaco.ttf
